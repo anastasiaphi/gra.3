@@ -16,7 +16,6 @@ int main()
     for (int threads_id = 0; threads_id < NT; ++threads_id)
         threads.emplace_back(worker, threads_id);
 
-    threads.clear();
     cout << "calculation finished\n";
     
     return 0;
